@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<title>محمد | HEMEX</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;900&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    font-family:'Almarai', sans-serif;
+    background:#0e0e0e; color:#fff;
+    overflow-x:hidden; padding-top:70px;
+}
+
+.main-nav {
+    position:fixed; top:0; width:100%; z-index:1000;
+    background:rgba(14,14,14,0.9); backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.05); padding:15px 8%;
+}
+.nav-container { display:flex; justify-content:space-between; align-items:center; max-width:1400px; margin:0 auto; }
+.logo { font-family:'Cairo'; font-weight:900; font-size:1.5rem; color:#fff; text-decoration:none; }
+.logo span { color:#ffa211; }
+.nav-links { display:flex; list-style:none; gap:30px; }
+.nav-links a { text-decoration:none; color:#ddd; font-size:0.9rem; transition:0.3s; }
+.nav-links a:hover { color:#333333 !important; }
+.nav-btn { background:#ffa211; color:#0e0e0e; padding:8px 20px; border-radius:50px; text-decoration:none; font-size:0.85rem; font-weight:700; transition:0.3s; }
+section { 
+    min-height: auto;
+    padding: 80px 8%; 
+    display: block; 
+    position: relative; 
+}
+.intro-content { display:grid; grid-template-columns:1.2fr 0.8fr; align-items:center; gap:40px; height:100%; }
+.image-container { position:relative; display:flex; justify-content:center; }
+.circle-bg { position:absolute; width:350px; height:350px; background:#ffa211; border-radius:50%; z-index:1; opacity:0.9; }
+.top-nav, .bottom-info { display:flex; justify-content:space-between; font-size:0.8rem; color:#888; z-index:10; }
+.btn-work { display:inline-block; margin-top:10px; padding:10px 25px; background:#ffa211; color:#0e0e0e; border:1px solid #ffa211; border-radius:50px; text-decoration:none; font-size:0.85rem; font-weight:700; transition:all 0.3s ease; cursor:pointer; }
+.btn-work:hover { background:transparent; color:#ffa211; transform:translateY(-3px); box-shadow:0 5px 15px rgba(254,162,17,0.3); }
+.edu-item { margin-bottom:30px; border-right:3px solid #ffa211; padding-right:15px; }
+.logo-marquee-wrapper { padding:100px 8%; background:#0e0e0e; text-align:center; }
+.logo-marquee { display:grid; grid-template-columns:repeat(auto-fit,minmax(80px,1fr)); gap:20px; justify-items:center; align-items:center; }
+.logo-marquee img { width:80px; height:auto; object-fit:contain; transition:0.3s ease; }
+.logo-marquee img:hover { transform:scale(1.1); }
+.coverage-grid { display:flex; gap:20px; justify-content:center; align-items:flex-start; flex-wrap:wrap; margin-top:40px; }
+.coverage-card { position:relative; flex:1; min-width:250px; max-width:300px; border-radius:35px; overflow:hidden; background:#1a1a1a; transition:all 0.4s ease; border:1px solid rgba(255,255,255,0.05); }
+.coverage-card img { width:100%; height:100%; object-fit:cover; transition:0.5s ease; }
+.coverage-card:hover img { transform:scale(1.1); }
+.coverage-overlay { position:absolute; bottom:0; width:100%; padding:25px 20px; background:linear-gradient(transparent, rgba(0,0,0,0.8)); }
+.coverage-tag { background:#ffa211; color:#000; padding:3px 10px; border-radius:50px; font-size:0.7rem; font-weight:700; }
+.coverage-tag:hover { opacity:0.9; transform:translateY(-2px); transition:all 0.3s ease; }
+.social-links-refined a { color:#ffa211; font-size:1.4rem; transition:0.3s ease; } 
+.social-links-refined a:hover { color:#333333 !important; transform:translateY(-3px); }
+.work-card { background:linear-gradient(145deg,#151515,#0d0d0d); border-radius:35px; padding:15px; border:1px solid rgba(255,255,255,0.03); transition:all 0.4s ease; display:flex; flex-direction:column; height:100%; }
+.work-card:hover { transform:translateY(-15px); border-color:#ffa211; box-shadow:0 20px 40px rgba(0,0,0,0.6); }
+.work-img-box { width:100%; height:220px; background-size:cover; background-position:center; border-radius:25px; position:relative; margin-bottom:20px; }
+.work-tag { position:absolute; top:15px; left:15px; background:#ffa211; color:#000; padding:5px 15px; border-radius:50px; font-size:0.75rem; font-weight:900; }
+.work-content { padding:0 10px 10px; flex-grow:1; display:flex; flex-direction:column; }
+.work-content h3 { font-family:'Cairo'; font-size:1.2rem; margin-bottom:10px; color:#fff; }
+.work-content p { color:#888; font-size:0.9rem; line-height:1.6; margin-bottom:20px; flex-grow:1; }
+.work-link { background:rgba(255,162,17,0.1); color:#ffa211; text-align:center; padding:12px; border-radius:15px; text-decoration:none; font-weight:700; font-size:0.9rem; transition:0.3s; border:1px solid rgba(255,162,17,0.2); }
+.work-link:hover { background:#ffa211; color:#000; transform:scale(1.02); }
+#hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.hero-img-container {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+.hero-full-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.bottom-shadow-overlay-dark {
+  position: absolute;
+  bottom: -1px; 
+  left: 0;
+  width: 100%;
+  height: 12%; 
+  background: linear-gradient(
+    to bottom,
+    rgba(18, 18, 18, 0) 0%,     
+    rgba(18, 18, 18, 0.2) 20%,   
+    rgba(18, 18, 18, 0.5) 50%,  
+    rgba(18, 18, 18, 0.8) 80%,   
+    rgba(18, 18, 18, 1) 100%    
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+.coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            align-items: start;
+        }
+.coverage-card {
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+.coverage-grid .coverage-card:nth-child(even) {
+            margin-top: 50px;
+        }
+.coverage-grid .coverage-card:nth-child(odd) {
+            margin-top: 0px;
+        }
+.media-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: #ffa211 !important;
+            background: rgba(255,162,17,0.03) !important;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+.media-card:hover .arrow-icon {
+            transform: translateX(-10px);
+            background: #fff !important;
+            color: #000 !important;
+        }
+.press-row-sm:hover {
+            padding-right: 20px !important;
+            background: linear-gradient(90deg, rgba(51,51,51,0.1) 0%, transparent 100%);
+        }
+.press-row-sm:hover .title-sm {
+            color: #333333 !important;
+        }
+.press-row-sm:hover .num-sm {
+            color: #333333 !important;
+        }
+.press-row-sm:hover .icon-sm {
+            background: #333333 !important;
+            color: #fff !important;
+            transform: rotate(45deg);
+        }
+@keyframes scrollText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    .ft-social { width: 42px; height: 42px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; font-size: 1.1rem; transition: 0.4s; background: rgba(255,255,255,0.01); }
+    .ft-social:hover { background: #333333; color: #fff; border-color: #333333; transform: translateY(-5px) rotate(8deg); }
+@media (max-width: 768px) {
+    section { 
+        padding: 60px 5% !important; 
+    }
+.intro-content, 
+.coverage-grid, 
+    #tv-interviews-premium > div,
+    #famous-works > div {
+        display: flex !important;
+        flex-direction: column !important; 
+        align-items: center !important;
+        text-align: center !important;
+        gap: 30px !important;
+    }
+    div[style*="grid-template-columns"], 
+.logo-marquee {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        grid-template-columns: 1fr !important;
+    }
+.person-img {
+    height: 300px !important; 
+    max-width: 90% !important;
+}  
+.circle-bg {
+        width: 220px !important;
+        height: 220px !important;
+    }
+.coverage-grid .coverage-card:nth-child(even),
+.coverage-grid .coverage-card:nth-child(odd) {
+        margin-top: 0 !important;
+        width: 100% !important;
+        max-width: 320px !important;
+    }
+.coverage-card img, .work-img-box {
+        width: 100% !important;
+    }
+.nav-links {
+        display: none !important;
+    }
+}
+.slim-link {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 20px 10px; text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.3s ease;
+        }
+        .slim-link .info { display: flex; flex-direction: column; gap: 4px; }
+        .slim-link .tag { 
+            font-size: 0.6rem; color: #ffa211; font-weight: 800; 
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        .slim-link h4 { 
+            margin: 0; font-size: 1rem; color: #ddd; font-weight: 500; 
+            transition: 0.3s;
+        }
+        .slim-link .arrow { font-size: 1.1rem; color: #333; transition: 0.3s; }
+    .slim-link:hover { padding-right: 20px; }
+        .slim-link:hover { background: rgba(51, 51, 51, 0.05); padding-right: 20px; }
+        .slim-link:hover h4 { color: #333333; }
+        .slim-link:hover .arrow { color: #333333; transform: translate(-5px, -5px); }
+.glowing-number {
+    text-shadow: 0 0 10px rgba(254, 162, 17, 0.4), 
+                 0 0 20px rgba(254, 162, 17, 0.3), 
+                 0 0 30px rgba(254, 162, 17, 0.2);
+    animation: intense-glow 2.5s ease-in-out infinite alternate;
+}
+@keyframes intense-glow {
+    from {
+        text-shadow: 0 0 10px rgba(254, 162, 17, 0.5), 
+                     0 0 20px rgba(254, 162, 17, 0.3);
+        transform: scale(1);
+    }
+    to {
+        text-shadow: 0 0 25px rgba(254, 162, 17, 0.8), 
+                     0 0 45px rgba(254, 162, 17, 0.5),
+                     0 0 60px rgba(254, 162, 17, 0.3);
+        transform: scale(1.02);
+    }
+}
+
+.balanced-glow {
+    text-shadow: 0 0 15px rgba(254, 162, 17, 0.45);
+    animation: professional-glow 3s ease-in-out infinite alternate;
+}
+@keyframes professional-glow {
+    from {
+        text-shadow: 0 0 15px rgba(254, 162, 17, 0.45);
+        filter: brightness(1);
+    }
+    to {
+        text-shadow: 0 0 22px rgba(254, 162, 17, 0.55);
+        filter: brightness(1.1);
+    }
+}
+#uae-portfolio{
+padding:60px 5%;
+background:#0f0f0f;
+direction:rtl;
+font-family:'Cairo',sans-serif;
+color:#fff;
+}
+.uae-header{
+text-align:center;
+margin-bottom:40px;
+}
+.uae-header span{
+color:#ffa211;
+font-size:.75rem;
+letter-spacing:2px;
+font-weight:700;
+}
+.uae-header h2{
+font-size:1.8rem;
+margin:10px 0;
+font-weight:900;
+}
+.uae-header p{
+font-size:.9rem;
+color:#777;
+max-width:500px;
+margin:auto;
+line-height:1.6;
+}
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:15px;
+}
+.project-card{
+background:#151515;
+padding:18px;
+border:1px solid rgba(255,255,255,0.06);
+transition:.3s;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+.project-card:hover{
+border-color:#333333;
+transform:translateY(-3px);
+}
+.project-title{
+font-size:.9rem;
+font-weight:800;
+color:#ffa211;
+margin-bottom:6px;
+}
+.project-desc{
+font-size:.75rem;
+color:#aaa;
+line-height:1.5;
+margin-bottom:12px;
+}
+.project-btn a{
+text-decoration:none;
+font-size:.75rem;
+font-weight:700;
+color:#fff;
+border:1px solid #444;
+padding:6px 12px;
+display:inline-block;
+transition:.3s;
+}
+.project-btn a:hover{
+background:#333333;
+color:#fff;
+border-color:#333333;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none !important; 
+    }
+    .nav-links.open {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #0e0e0e;
+        padding: 20px;
+        z-index: 999;
+    }
+}
+.nav-links.open { display: flex !important; }
+#hero {
+    background-color: #0e0e0e;
+    padding: 0; 
+    width: 100%;
+    overflow: hidden;
+  }
+  .hero-img-container {
+    width: 100%;
+    max-width: 1400px; 
+    margin: 0 auto;
+    line-height: 0; 
+  }
+
+  .hero-full-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  @media (max-width: 768px) {
+    .hero-img-container {
+      padding: 0; 
+    }
+    .hero-full-img {
+      width: 100vw; 
+      border-radius: 0; 
+    }
+  }
+   .honor-card-new:hover {
+            transform: translateY(-15px);
+            background: rgba(51, 51, 51, 0.05);
+            border-color: rgba(51, 51, 51, 0.5);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .honor-card-new:hover a {
+            box-shadow: 0 5px 15px rgba(51, 51, 51, 0.4);
+            transform: scale(1.02);
+        }
+        .portfolio-card:hover {
+            transform: translateY(-10px);
+            background: #161616 !important;
+            border-color: #33 !important;
+        }
+    .num-card:hover {
+            background: rgba(51, 51, 51, 0.05) !important;
+            border-color: #333333 !important;
+            transform: translateY(-8px);
+        }
+   .static-brand {
+            width: 100%;
+            height: auto;
+            max-height: 60px; 
+            object-fit: contain;
+            filter: grayscale(0);
+            opacity: 1;
+            transition: transform 0.3s ease;
+        }
+
+     .static-brand:hover {
+            transform: scale(1.1);
+        }
+
+     @media (max-width: 600px) {
+      .logo-grid-wrapper div[style*="grid-template-columns"] {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 20px !important;
+            }
+        }
+    html {
+  scroll-behavior: smooth;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width:768px){
+  .menu-toggle {
+    display: block;
+  }
+}
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+@media (max-width: 500px) {
+    .logo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .logo-grid img {
+        width: 100%;
+        max-width: 100px;
+        margin: 0 auto;
+        display: block;
+        object-fit: contain;
+    }
+}
+.slider-viewport {
+    width: 100%;
+    overflow: hidden; 
+    padding: 30px 0;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    width: max-content; 
+    animation: scroll-4-images 30s linear infinite;
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+}
+.photo-box {
+    width: calc(25vw - 20px); 
+    margin: 0 10px; 
+    flex-shrink: 0;
+}
+.photo-box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+@keyframes scroll-4-images {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-15 * 25vw)); }
+}
+@media (max-width: 768px) {
+    .photo-box {
+        width: calc(50vw - 20px);
+    }
+    @keyframes scroll-4-images {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-15 * 50vw)); }
+    }
+}
+
+@media print {
+    body, html {
+        background-color: #0e0e0e !important; 
+        color: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        padding-top: 0 !important; 
+    }
+
+    .main-nav { 
+        position: relative !important; 
+        background: #0e0e0e !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    .menu-toggle, .nav-btn {
+        display: none !important;
+    }
+
+    section, #hero, .hero-img-container, .hero-full-img {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    .coverage-card, .work-card, .project-card, .photo-box {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    .coverage-grid .coverage-card:nth-child(even) {
+        margin-top: 0 !important;
+    }
+}
+</style>
+</head>
+<body>
+<nav class="main-nav" style="background-color: #ffffff; padding: 15px 0;">
+    <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; direction: rtl;">
+        
+        <a href="#" class="logo" style="font-family: 'Cairo', sans-serif; font-weight: 900; font-size: 1.5rem; color: #111; text-decoration: none;">
+            HEMEX<span style="color: #ffa211;">_77</span>
+        </a>
+        
+        <ul class="nav-links" style="display: flex; list-style: none; gap: 30px; margin: 0; padding: 0;">
+          <li><a href="#hero" style="font-family: 'Cairo', sans-serif; text-decoration: none; color: #111; font-size: 0.95rem; font-weight: 600; transition: 0.3s;" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#111'">الرئيسية</a></li>
+          <li><a href="#about" style="font-family: 'Cairo', sans-serif; text-decoration: none; color: #111; font-size: 0.95rem; font-weight: 600; transition: 0.3s;" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#111'">عني</a></li>
+          <li><a href="#uae-honors-section" style="font-family: 'Cairo', sans-serif; text-decoration: none; color: #111; font-size: 0.95rem; font-weight: 600; transition: 0.3s;" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#111'">الإمارات</a></li>
+          <li><a href="#encounters-featured" style="font-family: 'Cairo', sans-serif; text-decoration: none; color: #111; font-size: 0.95rem; font-weight: 600; transition: 0.3s;" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#111'">لقاءات</a></li>
+        </ul>
+        
+        <div class="nav-action">
+             <a href="#ss" class="nav-btn">تواصل معي</a>
+        </div>
+    </div>
+</nav>
+
+<div class="main-body-content"></div>
+
+<section id="hero" style="width: 100%; overflow: hidden;">
+    <img src="p.png" alt="Hero Portfolio" class="hero-full-img" style="width: 100%; height: auto; display: block; object-fit: cover;">
+</section>
+
+<section id="about" style="
+  direction: rtl;
+  padding: 110px 8% 80px;
+  background: linear-gradient(to bottom, #f8f8f9, #efefef);
+  overflow: hidden;
+  position: relative;
+  font-family: 'Cairo', sans-serif;
+">
+
+<style>
+  .intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    flex-wrap: nowrap;
+  }
+
+  .text-side {
+    flex: 1.2;
+    min-width: 320px;
+    text-align: right;
+  }
+
+  .image-side-wrapper {
+    flex: .75;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icon {
+    color: #ffa211; 
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .social-icon:hover {
+    color: #333333 !important; 
+    transform: translateY(-5px);
+  }
+
+  @media (max-width: 950px) {
+    #about {
+      padding: 60px 5% 60px !important;
+    }
+
+    .intro-content {
+      flex-wrap: wrap !important;
+      flex-direction: column-reverse; 
+      gap: 40px;
+    }
+
+    .text-side {
+      text-align: center !important;
+      flex: 1;
+      min-width: 100%;
+    }
+
+    .hero-title {
+      font-size: 2.5rem !important;
+    }
+
+    .hero-description {
+      margin: 20px auto !important;
+      font-size: 1rem !important;
+    }
+
+    .social-links-refined {
+      justify-content: center !important;
+    }
+
+    .platforms-row {
+      justify-content: center !important;
+    }
+    
+    .platforms-line {
+      display: none !important; 
+    }
+
+    .image-container {
+      width: 280px !important;
+      height: 280px !important;
+    }
+
+    .bg-circle {
+      width: 230px !important;
+      height: 230px !important;
+    }
+    
+    .counter-number {
+      font-size: 3rem !important;
+    }
+  }
+</style>
+
+<div class="intro-content">
+
+  <div class="text-side" data-aos="fade-left">
+
+    <h1 class="hero-title" style="
+      font-size: 3.4rem;
+      font-weight: 900;
+      line-height: 1.35;
+      margin: 0;
+      color: #111;
+      letter-spacing: -1px;
+    ">
+      أهلاً، أنا محمد <br>
+      <span style="color: #ff9f0a;">الظرافي "همكس"</span>
+    </h1>
+
+    <p class="hero-description" style="
+      color: #4d4d4d;
+      line-height: 2;
+      max-width: 620px;
+      font-size: 1.05rem;
+      margin: 32px 0;
+      font-family: 'Almarai', sans-serif;
+      font-weight: 800;
+    ">
+      لستُ مجرد صانع محتوى، بل واجهة إعلامية تجمع بين الشغف الرياضي والتأثير الجماهيري الضخم. بصمتي الرقمية تتجاوز 15 مليون متابع، وصوتي يصل إلى الجماهير من الخليج إلى المحيط، محققاً أرقاماً قياسية في التفاعل والانتشار العالمي.
+    </p>
+
+    <div class="platforms-row" style="
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 45px;
+    ">
+      <span style="
+        color: #111;
+        font-weight: 900;
+        font-size: .95rem;
+        white-space: nowrap;
+      ">
+        جميع المنصات
+      </span>
+      <div class="platforms-line" style="
+        flex-grow: 1;
+        height: 2px;
+        background: linear-gradient(to left, #ff9f0a, transparent);
+        border-radius: 50px;
+      "></div>
+    </div>
+
+    <div class="social-links-refined" style="
+      display: flex;
+      gap: 28px;
+      margin-top: 25px;
+    ">
+      <a href="https://www.tiktok.com/@hemex_7" target="_blank" class="social-icon">
+        <i class="fab fa-tiktok"></i>
+      </a>
+
+      <a href="https://www.instagram.com/hemex_77/" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.youtube.com/@hemex" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+      </a>
+
+      <a href="https://x.com/hemex_777" target="_blank" class="social-icon">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+
+      <a href="https://www.snapchat.com/@hemex_7" target="_blank" class="social-icon">
+        <i class="fab fa-snapchat"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="image-side-wrapper" style="flex: 0.7; min-width: 300px; display: flex; flex-direction: column; align-items: center; padding-top: 40px;">
+        <div class="image-container" style="position: relative; width: 320px; height: 320px; display: flex; justify-content: center; align-items: center;">
+            <div class="circle-bg" style="position: absolute; width: 280px; height: 280px; background: #ffa211; border-radius: 50%; opacity: 1; z-index: 1;"></div>
+            <img src="all.png" alt="HEMEX" class="person-img" style="position: relative; z-index: 2; width: 100%; max-width: 400px; height: auto; object-fit: contain;">
+        </div> 
+        <div class="stats-badge-below" style="margin-top: 25px; text-align: center; z-index: 10;">
+            <div class="balanced-glow" style="font-size: 3.5rem; font-weight: 900; color: #ffa211; line-height: 1; font-family: 'Cairo';">
+                +15 مليون
+            </div>
+            <div style="font-size: 1rem; color: #777; font-weight: 500; margin-top: 8px; font-family: 'Almarai';">
+                   متابع عبر جميع المنصات
+            </div>
+        </div>
+  </div> 
+</div>
+</section>
+
+<section id="stats-minimal">
+  <style>
+    #stats-minimal {
+      padding: 90px 5%;
+      direction: rtl;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom, #efefef, #f8f8f9);
+      position: relative;
+      overflow: hidden;
+    }
+    #stats-minimal::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      right: -120px;
+      width: 280px;
+      height: 280px;
+      background: rgba(255, 162, 17, 0.08);
+      border-radius: 50%;
+      filter: blur(40px);
+    }
+    .stats-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      position: relative;
+      z-index: 2;
+    }
+    .stat-item {
+      flex: 1;
+      min-width: 180px;
+      text-align: center;
+      transition: transform .3s ease;
+    }
+    .stat-item:hover {
+      transform: translateY(-6px);
+    }
+    .platform-name {
+      font-size: .8rem;
+      color: #ffa211;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      font-family: 'Almarai', sans-serif;
+      font-weight: 800;
+    }
+    .stat-number {
+      font-size: 3.2rem;
+      font-weight: normal; 
+      color: #111;
+      line-height: 1;
+      font-family: 'Poppins', sans-serif;
+    }
+    .stat-number span {
+      color: #ffa211;
+      font-size: 1.4rem;
+      margin-right: 5px;
+    }
+    .stat-line {
+      width: 40px;
+      height: 2px;
+      background: linear-gradient(to left, #ffa211, transparent);
+      margin: 18px auto;
+      border-radius: 50px;
+    }
+    .stat-desc {
+      color: #666;
+      font-size: .85rem;
+      font-family: 'Almarai', sans-serif;
+      font-weight: 700;
+    }
+    .total-card .stat-number {
+      color: #111;
+      font-weight: 900; 
+    }
+    .total-card .stat-line {
+      width: 55px;
+      background: #ffa211;
+    }
+    @media (max-width: 900px) {
+      #stats-minimal {
+        padding: 70px 5%;
+      }
+      .stats-wrapper {
+        gap: 35px;
+      }
+      .stat-item {
+        min-width: 100%;
+      }
+      .stat-number {
+        font-size: 2.6rem;
+      }
+    }
+</style>
+
+  <div class="stats-wrapper">
+    <div class="stat-item" data-aos="fade-up">
+      <div class="platform-name">TikTok</div>
+      <div class="stat-number">8.6<span>M</span></div>
+      <div class="stat-line"></div>
+      <p class="stat-desc">متابع نشط</p>
+    </div>
+
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="platform-name">Instagram</div>
+      <div class="stat-number">2.6<span>M</span></div>
+      <div class="stat-line"></div>
+      <p class="stat-desc">تفاعل حقيقي</p>
+    </div>
+
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+      <div class="platform-name">YouTube</div>
+      <div class="stat-number">1.54<span>M</span></div>
+      <div class="stat-line"></div>
+      <p class="stat-desc">مشترك</p>
+    </div>
+
+    <div class="stat-item total-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="platform-name">Total Reach</div>
+      <div class="stat-number">+15<span>M</span></div>
+      <div class="stat-line"></div>
+      <p class="stat-desc">جمهور عالمي</p>
+    </div>
+  </div>
+</section>
+
+<section id="awards-highlight">
+  <style>
+    #awards-highlight {
+      padding: 90px 5%;
+      background: linear-gradient(to bottom, #f8f8f9, #efefef);
+      direction: rtl;
+      font-family: 'Cairo', sans-serif;
+      overflow: visible;
+      position: relative;
+    }
+
+    .awards-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .award-image-container {
+      flex: 0 0 400px;
+      position: relative;
+    }
+
+    .corner-border-top {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      width: 60px;
+      height: 60px;
+      border-top: 4px solid #ffa211;
+      border-right: 4px solid #ffa211;
+      z-index: 1;
+    }
+
+    .image-box {
+      position: relative;
+      border-radius: 18px;
+      overflow: visible;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); 
+      border: 1px solid rgba(255, 162, 17, 0.2);
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: brightness(1.02);
+    }
+
+    .image-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+      padding: 20px 15px;
+      text-align: center;
+    }
+
+    .image-caption span {
+      color: #ffa211;
+      font-weight: 800;
+      font-size: 1.2rem; 
+    }
+
+    .corner-border-bottom {
+      position: absolute;
+      bottom: -12px;
+      left: -12px;
+      width: 60px;
+      height: 60px;
+      border-bottom: 4px solid #ffa211;
+      border-left: 4px solid #ffa211;
+      z-index: 1;
+    }
+
+    .awards-content {
+      flex: 1;
+      min-width: 320px;
+      text-align: right;
+    }
+
+    .awards-content h2 {
+      font-size: clamp(2.5rem, 4.5vw, 3.6rem); 
+      font-weight: 900;
+      color: #111111; 
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .awards-content h2 span {
+      color: #ffa211;
+    }
+
+    .title-line {
+      width: 70px;
+      height: 4px;
+      background: #ffa211;
+      margin-bottom: 30px;
+    }
+
+    .awards-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+      gap: 22px; 
+    }
+
+    .award-item {
+      color: #333333; 
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 1.2rem; 
+      font-family: 'Almarai', sans-serif;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .award-item .icon {
+      color: #ffa211;
+      font-size: 1.4rem; 
+      line-height: 1;
+    }
+
+    @media (max-width: 900px) {
+      .award-image-container {
+        flex: 0 0 100%;
+        max-width: 400px;
+      }
+      
+      #awards-highlight {
+       padding: 90px 5% 110px 5%;
+      }
+    }
+  </style>
+
+  <div class="awards-wrapper">
+    
+    <div class="award-image-container">
+      <div class="corner-border-top"></div>
+      
+      <div class="image-box">
+        <img src="655.png" alt="8 Awards">
+        <div class="image-caption">
+          <span>تاريخ محفور بالإنجازات</span>
+        </div>
+      </div>
+      
+      <div class="corner-border-bottom"></div>
+    </div>
+
+    <div class="awards-content">
+      <h2>
+        أهم <br>
+        <span>الجوائز</span>
+      </h2>
+      <div class="title-line"></div>
+      
+      <ul class="awards-list">
+        <li class="award-item">
+          <span class="icon">✔</span> جائزة افضل صانع محتوى رياضي 2023
+        </li>
+        <li class="award-item">
+          <span class="icon">✔</span> جائزة افضل صانع محتوى رياضي 2024
+        </li>
+        <li class="award-item">
+          <span class="icon">✔</span> جائزة افضل صانع محتوى رياضي "الفضية" 2025
+        </li>
+        <li class="award-item">
+          <span class="icon">✔</span> درع 5m مشترك في التيك توك    
+        </li>
+        <li class="award-item">
+          <span class="icon">✔</span> درع 1m مشترك في التيك توك 
+        </li>
+        <li class="award-item">
+          <span class="icon">✔</span> درع 1m مشترك في اليوتيوب 
+        </li>
+        <li class="award-item">
+          <span class="icon">✔</span> درع 100k مشترك في اليوتيوب 
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="nomination-compact-mobile" style="
+  padding: 100px 5%;
+  background: linear-gradient(to bottom, #efefef, #f8f8f9);
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+  overflow: hidden;
+  position: relative;
+">
+<div style="
+  position: absolute;
+  top: -140px;
+  right: -140px;
+  width: 320px;
+  height: 320px;
+  background: rgba(255,162,17,.08);
+  border-radius: 50%;
+  filter: blur(45px);
+"></div>
+<div style="
+  max-width: 1250px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+">
+  <div style="text-align: center; margin-bottom: 70px;">
+    <h1 style="
+      font-size: clamp(2.3rem, 4vw, 3.6rem);
+      font-weight: 900;
+      color: #111;
+      margin: 0;
+      line-height: 1.2;
+    ">
+      الترشيحات <span style="color:#ffa211;">العالمية</span>
+    </h1>
+    <div style="
+      width: 65px;
+      height: 4px;
+      background: #ffa211;
+      margin: 18px auto 0;
+      border-radius: 50px;
+    "></div>
+  </div>
+  <div style="
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+  ">
+    <div style="
+      width: 250px;
+      background: #fff;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,.06);
+      border: 1px solid rgba(255,162,17,.1);
+      transition: .3s ease;
+    " data-aos="fade-up">
+      <div style="height: 300px; overflow: hidden;">
+        <img src="IMG_7131.JPG.jpeg" style="
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        ">
+      </div>
+      <div style="padding: 18px; text-align: center;">
+        <h3 style="margin:0; font-size:1rem; font-weight:900; color:#111;">
+          Global Soccer
+        </h3>
+      </div>
+
+    </div>
+    <div style="
+      width: 250px;
+      background: #fff;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,.06);
+      border: 1px solid rgba(255,162,17,.1);
+      margin-top: 25px;
+    " data-aos="fade-up" data-aos-delay="100">
+      <div style="height: 300px; overflow: hidden;">
+        <img src="IMG_6413.JPG.jpeg" style="
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        ">
+      </div>
+      <div style="padding: 18px; text-align: center;">
+        <h3 style="margin:0; font-size:1rem; font-weight:900; color:#111;">
+          TikTok Award
+        </h3>
+      </div>
+
+    </div>
+    <div style="
+      width: 250px;
+      background: #fff;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,.06);
+      border: 1px solid rgba(255,162,17,.1);
+    " data-aos="fade-up" data-aos-delay="200">
+      <div style="height: 300px; overflow: hidden;">
+        <img src="IMG_7012.PNG" style="
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+          display: block;
+        ">
+      </div>
+      <div style="padding: 18px; text-align: center;">
+        <h3 style="margin:0; font-size:1rem; font-weight:900; color:#111;">
+          The Critter Award
+        </h3>
+      </div>
+
+    </div>
+    <div style="
+      width: 250px;
+      background: #fff;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,.06);
+      border: 1px solid rgba(255,162,17,.1);
+      margin-top: 25px;
+    " data-aos="fade-up" data-aos-delay="300">
+      <div style="height: 300px; overflow: hidden;">
+        <img src="IMG_2860.PNG" style="
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        ">
+      </div>
+      <div style="padding: 18px; text-align: center;">
+        <h3 style="margin:0; font-size:1rem; font-weight:900; color:#111;">
+          Joy Award
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<style>
+    .team-section-container {
+        display: flex;
+        flex-direction: row; 
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .team-title-side {
+        flex: 0 0 250px;
+        position: relative;
+        padding-top: 20px;
+        text-align: right; 
+    }
+
+    .team-title-side h2 {
+        font-size: 3rem;
+        font-weight: 900;
+        color: #111111; 
+        line-height: 1.2;
+        margin: 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    .team-title-side::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -15px;
+        width: 70px;
+        height: 70px;
+        background-color: #ffa211;
+        border-radius: 50%;
+        z-index: 1;
+        opacity: 0.85;
+    }
+    
+    .team-cards-grid {
+        display: flex;
+        flex: 1;
+        gap: 25px;
+        justify-content: flex-end;
+    }
+
+    .honor-card-v2 {
+        flex: 1;
+        min-width: 220px;
+        background: #F9F9FB; 
+        padding: 15px;
+        border-radius: 12px;
+   
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09), 0 1px 8px rgba(0, 0, 0, 0.04); 
+        text-align: right; 
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .honor-card-v2:hover {
+        transform: translateY(-5px);
+        
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+    
+    .honor-card-v2 .image-wrapper {
+        width: 100%;
+        height: 300px; 
+        overflow: hidden;
+        margin-bottom: 15px;
+        border-radius: 8px; 
+    }
+    
+    .honor-card-v2 .image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .rating-stars {
+        color: #ffa211;
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+        letter-spacing: 2px;
+        text-align: right;
+    }
+    
+    .honor-card-v2 h3 {
+        color: #222;
+        font-size: 1.1rem;
+        font-weight: 800;
+        margin: 5px 0 20px 0;
+        line-height: 1.4;
+        text-align: right;
+        min-height: 50px; 
+    }
+    
+    .btn-view-honor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        background: transparent;
+        color: #111;
+        text-decoration: none;
+        padding: 12px 0;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        text-align: center;
+        border: 2px solid #ffa211; 
+        box-sizing: border-box;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .btn-view-honor:hover {
+        background: #ffa211;
+        color: #fff; 
+        box-shadow: 0 5px 15px rgba(255, 162, 17, 0.3);
+    }
+
+    .btn-view-honor span {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .btn-view-honor:hover span {
+        transform: translateX(-3px); 
+    }
+    
+    @media (max-width: 900px) {
+        .team-section-container {
+            flex-direction: column;
+            align-items: flex-start; 
+        }
+        .team-title-side {
+            flex: none;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .team-title-side::before {
+            right: -10px; 
+        }
+        .team-cards-grid {
+            flex-direction: column;
+            width: 100%;
+            gap: 30px;
+        }
+        .honor-card-v2 .image-wrapper {
+            height: 350px;
+        }
+    }
+</style>
+
+<section id="uae-honors-section" style="padding: 100px 5%; direction: rtl; background: #F9F9FB; font-family: 'Cairo', sans-serif; overflow: hidden;">
+    <div class="team-section-container">
+        
+        <div class="team-title-side">
+            <h2>تكريمات<br><span style="color: #ffa211;">دولة الإمارات</span></h2>
+        </div>
+
+        <div class="team-cards-grid">
+            
+            <div class="honor-card-v2">
+                <div class="image-wrapper">
+                    <img src="2023.png" alt="تكريم 2023">
+                </div>
+                <div class="rating-stars">★★★★★</div>
+                <h3>أفضل صانع محتوى رياضي 2023</h3>
+                <a href="https://www.instagram.com/p/C2FuvRcIHL3/" target="_blank" class="btn-view-honor">
+                    مشاهدة التكريم <span>◁</span>
+                </a>
+            </div>
+
+            <div class="honor-card-v2">
+                <div class="image-wrapper">
+                    <img src="لقطة شاشة 2026-03-10 160002.png" alt="تكريم 2024">
+                </div>
+                <div class="rating-stars">★★★★★</div>
+                <h3>أفضل صانع محتوى رياضي 2024</h3>
+                <a href="https://www.instagram.com/p/DFNEOggMrQQ/" target="_blank" class="btn-view-honor">
+                    مشاهدة التكريم <span>◁</span>
+                </a>
+            </div>
+
+            <div class="honor-card-v2">
+                <div class="image-wrapper">
+                    <img src="2025.png" alt="جائزة التميز">
+                </div>
+                <div class="rating-stars">★★★★★</div>
+                <h3>الجائزة الفضية للتميز</h3>
+                <a href="https://www.instagram.com/p/DTQzRPAjCPa/" target="_blank" class="btn-view-honor">
+                    عرض الجائزة <span>◁</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="uae-portfolio-numbers" style="padding: 80px 5%; background: #F9F9FB; direction: rtl; font-family: 'Cairo', sans-serif; overflow: hidden;">
+    <div style="text-align: center; max-width: 800px; margin: 0 auto 60px;">
+        <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: #111111; margin: 0; line-height: 1.2;">
+            أبرز الأعمال <span style="color: #ffa211;">في الإمارات</span>
+        </h2>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; max-width: 1100px; margin: 0 auto;">
+        
+        <a href="https://www.instagram.com/p/C6hSrW2o3CJ/" target="_blank" class="num-card" style="flex: 0 1 260px; text-decoration: none; position: relative; padding: 30px 20px; background: #ffffff; border-radius: 25px; transition: 0.4s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); overflow: hidden; text-align: center;">
+            <span style="position: absolute; left: 15px; top: -10px; font-size: 6rem; font-weight: 900; color: rgba(0, 0, 0, 0.03); font-family: 'Poppins', sans-serif; pointer-events: none;">1</span>
+            <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 55px; height: 55px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; border: 2px solid #ffa211;">
+                    <img src="sd.png" alt="Logo" style="width: 30px; height: auto;">
+                </div>
+                <div style="color: #ffa211; font-size: 0.65rem; font-weight: 900; margin-bottom: 8px; font-family: 'Almarai';">DUBAI</div>
+                <h4 style="color: #111111; font-size: 1.1rem; font-weight: 800; margin-bottom: 12px; margin-top: 0;">Game Expo</h4>
+                <p style="color: #555555; font-family: 'Almarai'; font-size: 0.8rem; line-height: 1.5; margin-bottom: 18px; margin-top: 0;">تغطية إعلامية رسمية لفعاليات معرض قيم اكسبو.</p>
+                <div style="color: #111111; font-weight: 900; font-size: 0.8rem; border-bottom: 2px solid #ffa211; display: inline-block; padding-bottom: 3px;">مشاهدة التفاصيل</div>
+            </div>
+        </a>
+
+        <a href="https://www.tiktok.com/@hemex_7/video/7502886018350058770" target="_blank" class="num-card" style="flex: 0 1 260px; text-decoration: none; position: relative; padding: 30px 20px; background: #ffffff; border-radius: 25px; transition: 0.4s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); overflow: hidden; text-align: center;">
+            <span style="position: absolute; left: 15px; top: -10px; font-size: 6rem; font-weight: 900; color: rgba(0, 0, 0, 0.03); font-family: 'Poppins', sans-serif; pointer-events: none;">2</span>
+            <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 55px; height: 55px; background: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; border: 2px solid #ffa211; box-shadow: 0 4px 15px rgba(255,162,17,0.2);">
+                    <img src="200.png" alt="DAMAC Logo" style="width: 45px; height: auto;">
+                </div>
+                <div style="color: #ffa211; font-size: 0.65rem; font-weight: 900; margin-bottom: 8px; font-family: 'Almarai';">DUBAI</div>
+                <h4 style="color: #111111; font-size: 1.1rem; font-weight: 800; margin-bottom: 12px; margin-top: 0;">DAMAC</h4>
+                <p style="color: #555555; font-family: 'Almarai'; font-size: 0.8rem; line-height: 1.5; margin-bottom: 18px; margin-top: 0;">تعاون إعلاني لمشروع داماك العقاري الفاخر.</p>
+                <div style="color: #111111; font-weight: 900; font-size: 0.8rem; border-bottom: 2px solid #ffa211; display: inline-block; padding-bottom: 3px;">مشاهدة التفاصيل</div>
+            </div>
+        </a>
+
+        <a href="https://www.tiktok.com/@hemex_7/video/7470632432459451666" target="_blank" class="num-card" style="flex: 0 1 260px; text-decoration: none; position: relative; padding: 30px 20px; background: #ffffff; border-radius: 25px; transition: 0.4s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); overflow: hidden; text-align: center;">
+            <span style="position: absolute; left: 15px; top: -10px; font-size: 6rem; font-weight: 900; color: rgba(0, 0, 0, 0.03); font-family: 'Poppins', sans-serif; pointer-events: none;">3</span>
+            <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center;">
+                <div style="display: flex; gap: -10px; margin-bottom: 20px; justify-content: center;">
+                    <div style="width: 45px; height: 45px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #ffa211; position: relative; z-index: 2;">
+                        <img src="29.PNG" style="width: 25px;" alt="TCL">
+                    </div>
+                    <div style="width: 45px; height: 45px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #ffa211; margin-right: -12px; position: relative; z-index: 1;">
+                        <img src="8.PNG" style="width: 25px;" alt="Arsenal">
+                    </div>
+                </div>
+                <div style="color: #ffa211; font-size: 0.65rem; font-weight: 900; margin-bottom: 8px; font-family: 'Almarai';">DUBAI</div>
+                <h4 style="color: #111111; font-size: 1.1rem; font-weight: 800; margin-bottom: 12px; margin-top: 0;">TCL x ARSENAL</h4>
+                <p style="color: #555555; font-family: 'Almarai'; font-size: 0.8rem; line-height: 1.5; margin-bottom: 18px; margin-top: 0;">تصوير حصري مع نجوم نادي أرسنال.</p>
+                <div style="color: #111111; font-weight: 900; font-size: 0.8rem; border-bottom: 2px solid #ffa211; display: inline-block; padding-bottom: 3px;">مشاهدة التفاصيل</div>
+            </div>
+        </a>
+
+        <a href="https://www.tiktok.com/@hemex_7/video/7497353412510633224" target="_blank" class="num-card" style="flex: 0 1 260px; text-decoration: none; position: relative; padding: 30px 20px; background: #ffffff; border-radius: 25px; transition: 0.4s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); overflow: hidden; text-align: center;">
+            <span style="position: absolute; left: 15px; top: -10px; font-size: 6rem; font-weight: 900; color: rgba(0, 0, 0, 0.03); font-family: 'Poppins', sans-serif; pointer-events: none;">4</span>
+            <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 55px; height: 55px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; border: 2px solid #ffa211;">
+                    <img src="aaaew.png" alt="Logo" style="width: 45px; height: auto;">
+                </div>
+                <div style="color: #ffa211; font-size: 0.65rem; font-weight: 900; margin-bottom: 8px; font-family: 'Almarai';">DUBAI</div>
+                <h4 style="color: #111111; font-size: 1.1rem; font-weight: 800; margin-bottom: 12px; margin-top: 0;">مبادرات دبي الخيرية</h4>
+                <p style="color: #555555; font-family: 'Almarai'; font-size: 0.8rem; line-height: 1.5; margin-bottom: 18px; margin-top: 0;">المشاركة في الفعاليات الخيرية برعاية دبي.</p>
+                <div style="color: #111111; font-weight: 900; font-size: 0.8rem; border-bottom: 2px solid #ffa211; display: inline-block; padding-bottom: 3px;">مشاهدة التفاصيل</div>
+            </div>
+        </a>
+
+        <a href="https://www.instagram.com/p/DRzfT0cjPeg/" target="_blank" class="num-card" style="flex: 0 1 260px; text-decoration: none; position: relative; padding: 30px 20px; background: #ffffff; border-radius: 25px; transition: 0.4s ease; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); overflow: hidden; text-align: center;">
+            <span style="position: absolute; left: 15px; top: -10px; font-size: 6rem; font-weight: 900; color: rgba(0, 0, 0, 0.03); font-family: 'Poppins', sans-serif; pointer-events: none;">5</span>
+            <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center;">
+                <div style="width: 55px; height: 55px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; border: 2px solid #ffa211; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="OIP.jpg" alt="Samsung Logo" style="width: 45px; height: auto;">
+                </div>
+                <div style="color: #ffa211; font-size: 0.65rem; font-weight: 900; margin-bottom: 8px; font-family: 'Almarai';">DUBAI</div>
+                <h4 style="color: #111111; font-size: 1.1rem; font-weight: 800; margin-bottom: 12px; margin-top: 0;">Samsung</h4>
+                <p style="color: #555555; font-family: 'Almarai'; font-size: 0.8rem; line-height: 1.5; margin-bottom: 18px; margin-top: 0;">تغطية بطولة FC بالتعاون مع سامسونج.</p>
+                <div style="color: #111111; font-weight: 900; font-size: 0.8rem; border-bottom: 2px solid #ffa211; display: inline-block; padding-bottom: 3px;">مشاهدة التفاصيل</div>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<style>
+    .num-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+    }
+</style>
+
+<section id="encounters-featured" style="direction: rtl; padding: 100px 8% 60px 8%; background: #F9F9FB; overflow: hidden;">
+  <div class="intro-content" style="display: flex; align-items: center; justify-content: space-between; gap: 60px; flex-wrap: wrap;">
+    
+    <div class="text-side" data-aos="fade-left" style="flex: 1.3; min-width: 320px; text-align: right;">
+      <h1 style="font-family: 'Cairo'; font-size: 2.7rem; font-weight: 900; line-height: 1.2; letter-spacing: -1px; margin: 0; color: #111111;">
+        لقاءات النخبة <br>
+        <span style="color: #ffa211;">والتغطيات </span>
+      </h1>
+      <p style="color: #444444; line-height: 1.8; max-width: 580px; font-size: 1.1rem; margin: 30px 0; font-family: 'Almarai', sans-serif;">
+        يمتد سجل الأعمال ليشمل أضخم التغطيات الميدانية والمحافل الرياضية الدولية.
+      </p>
+      
+      <div style="margin-top: 35px;">
+        <a href="work.html" 
+           style="display: inline-flex; align-items: center; gap: 10px; background: #ffa211; color: #111111; padding: 10px 22px; text-decoration: none; font-family: 'Cairo'; font-weight: 800; border-radius: 50px; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); font-size: 0.85rem; border: 2px solid #ffa211; box-shadow: 0 5px 15px rgba(255, 162, 17, 0.2);"
+        >
+            <span>شاهد كافة الأعمال</span>
+            <div style="background: rgba(0,0,0,0.08); width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="image-side-wrapper" style="flex: 0.7; min-width: 300px; display: flex; flex-direction: column; align-items: center; padding-top: 40px;">
+        <div class="image-container" style="position: relative; width: 320px; height: 320px; display: flex; justify-content: center; align-items: center;">
+            <div class="circle-bg" style="position: absolute; width: 280px; height: 280px; background: #ffa211; border-radius: 50%; opacity: 1; z-index: 1;"></div>
+            <img src="ZZ.png" alt="HEMEX ARAB CUP" class="person-img" style="position: relative; z-index: 2; width: 100%; max-width: 400px; height: auto; object-fit: contain;">
+        </div> 
+    </div>
+    
+  </div> 
+</section>
+
+<section id="tv-interviews-modern" style="background-color: #F9F9FB; padding: 80px 5%; direction: rtl; font-family: 'Cairo', sans-serif; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 10%; left: -5%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,162,17,0.03) 0%, transparent 70%); pointer-events: none;"></div>
+    
+    <div style="max-width: 900px; margin: 0 auto; position: relative; z-index: 2;"> 
+        
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 50px; flex-wrap: wrap; gap: 15px;">
+            <h2 style="color: #111111; font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 900; margin: 0; text-transform: uppercase; letter-spacing: -1px; line-height: 1.1;">
+                الظهور <span style="color: #ffa211; -webkit-text-stroke: 1px #ffa211; -webkit-text-fill-color: transparent;">الإعلامي</span>
+            </h2>
+            <div style="text-align: left; color: #777777; font-weight: 700; letter-spacing: 1px; font-size: 0.85rem;">TV & BROADCAST / 2025</div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 0;">
+            
+            <a href="https://vt.tiktok.com/ZSu5cXsfJ/" target="_blank" class="press-row-sm"
+               style="display: flex; align-items: center; text-decoration: none; padding: 25px 0; border-top: 1px solid rgba(0,0,0,0.08); transition: all 0.4s ease;">
+                <div class="num-sm" style="font-size: 0.9rem; color: #888888; font-weight: 900; min-width: 45px;">01</div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
+                    <h4 class="title-sm" style="color: #222222; margin: 0; font-size: 1rem; font-weight: 700; flex: 1; line-height: 1.4; transition: 0.4s;">حضور استثنائي لـ "همكس" عبر شاشة SBC الرياضية</h4>
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <span style="color: #ffa211; font-weight: 700; font-size: 0.75rem; white-space: nowrap; font-family: 'Almarai';">SBC TV</span>
+                        <div class="icon-sm" style="color: #ffffff; background: #ffa211; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid #ffa211; transition: 0.4s;">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.tiktok.com/@hemex_7/video/7466487095121415442" target="_blank" class="press-row-sm"
+               style="display: flex; align-items: center; text-decoration: none; padding: 25px 0; border-top: 1px solid rgba(0,0,0,0.08); transition: all 0.4s ease;">
+                <div class="num-sm" style="font-size: 0.9rem; color: #888888; font-weight: 900; min-width: 45px;">02</div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
+                    <h4 class="title-sm" style="color: #222222; margin: 0; font-size: 1rem; font-weight: 700; flex: 1; line-height: 1.4; transition: 0.4s;">همكس بين الأساطير: ملخص المباراة الخيرية في البحرين</h4>
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <span style="color: #666666; font-weight: 700; font-size: 0.75rem; white-space: nowrap; font-family: 'Almarai';">MUKALLA EVENT</span>
+                        <div class="icon-sm" style="color: #ffffff; background: #111111; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid #111111; transition: 0.4s;">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.tiktok.com/@hemex_7/video/7466585021797682439" target="_blank" class="press-row-sm"
+               style="display: flex; align-items: center; text-decoration: none; padding: 25px 0; border-top: 1px solid rgba(0,0,0,0.08); border-bottom: 1px solid rgba(0,0,0,0.08); transition: all 0.4s ease;">
+                <div class="num-sm" style="font-size: 0.9rem; color: #888888; font-weight: 900; min-width: 45px;">03</div>
+                <div style="flex: 1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
+                    <h4 class="title-sm" style="color: #222222; margin: 0; font-size: 1rem; font-weight: 700; flex: 1; line-height: 1.4; transition: 0.4s;">ما بعد المباراة الخيرية: تصريح حول جائزة الأفضل وصناعة الأهداف</h4>
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <span style="color: #666666; font-weight: 700; font-size: 0.75rem; white-space: nowrap; font-family: 'Almarai';">EXCLUSIVE</span>
+                        <div class="icon-sm" style="color: #ffffff; background: #111111; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid #111111; transition: 0.4s;">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+</section>
+
+<style>
+    .press-row-sm:hover {
+        background-color: rgba(0, 0, 0, 0.02);
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+    .press-row-sm:hover .title-sm {
+        color: #ffa211 !important;
+    }
+    .press-row-sm:hover .icon-sm {
+        background: #ffa211 !important;
+        border-color: #ffa211 !important;
+        color: #ffffff !important;
+        transform: rotate(45deg);
+    }
+</style>
+
+<style>
+.epic-projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 40px 30px; 
+    padding: 20px 20px 60px 20px; 
+    direction: rtl;
+    max-width: 1240px; 
+    margin: 0 auto;
+}
+
+.epic-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 30px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.03);
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (min-width: 993px) {
+    .epic-card:nth-child(odd) {
+        transform: translateY(-20px);
+    }
+}
+.epic-img-holder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.epic-img-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.epic-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    color: #111;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    font-family: 'Cairo', sans-serif;
+    z-index: 3;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.epic-info {
+    padding: 15px 18px 18px 18px; 
+    background: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.epic-info h3 {
+    margin: 0 0 8px 0; 
+    font-size: 0.95rem; 
+    font-weight: 800;
+    color: #111111;
+    line-height: 1.4;
+    font-family: 'Cairo', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.epic-link-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #ffa211;
+    font-weight: 800;
+    font-size: 0.75rem;
+    font-family: 'Cairo', sans-serif;
+}
+
+.epic-link-action span {
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.epic-card:hover {
+    box-shadow: 0 30px 70px rgba(255, 162, 17, 0.15); 
+    border-color: rgba(255, 162, 17, 0.3);
+}
+
+@media (min-width: 993px) {
+    .epic-card:nth-child(odd):hover {
+        transform: translateY(-35px) scale(1.02);
+    }
+    .epic-card:nth-child(even):hover {
+        transform: translateY(-15px) scale(1.02);
+    }
+}
+
+@media (max-width: 992px) {
+    .epic-card:hover {
+        transform: translateY(-10px);
+    }
+}
+
+.epic-card:hover .epic-img-holder img {
+    transform: scale(1.08) rotate(-1deg); 
+}
+
+.epic-card:hover .epic-badge {
+    background: #ffa211;
+    color: #111;
+}
+
+.epic-card:hover .epic-info h3 {
+    color: #ffa211;
+}
+
+.epic-card:hover .epic-link-action span {
+    border-color: #ffa211;
+}
+
+@media (max-width: 992px) {
+    .epic-projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .epic-projects-container {
+        grid-template-columns: 1fr; 
+        gap: 35px;
+    }
+}
+</style>
+
+<section id="coverage" style="background-color: #F9F9FB; padding: 70px 0 80px 0;">
+    <div style="text-align: center; margin-bottom: 35px;">
+        <h1 style="font-family: 'Cairo'; font-size: clamp(2.4rem, 6vw, 3.6rem); color: #111111; margin: 0; font-weight: 900; line-height: 1.1; letter-spacing: -1px;">
+            أبرز <span style="color: #ffa211;">المشاريع</span>
+        </h1>
+        <div style="width: 60px; height: 4px; background: #ffa211; margin: 15px auto 0; border-radius: 2px;"></div>
+    </div>
+    
+    <div class="epic-projects-container">
+        
+        <a href="https://www.tiktok.com/@hemex_7/video/7594397120992464148?_r=1&_t=ZS-95Q9lvbeage" target="_blank" class="epic-card">
+            <div class="epic-img-holder">
+                <img src="0404.png" alt="كلاسيكو الأرض">
+            </div>
+            <div class="epic-info">
+                <h3>تغطية كلاسيكو الارض في ملعب الانماء</h3>
+                <div class="epic-link-action">
+                    <span>شاهد التفاصيل كامله</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.instagram.com/p/DIqvWDYMGF9/" target="_blank" class="epic-card">
+            <div class="epic-img-holder">
+                <img src="ad.png" alt="Adidas & Mercedes">
+            </div>
+            <div class="epic-info">
+                <h3>Adidas & Mercedes<br>تعاون يعيد تعريف الفخامة الرياضية</h3>
+                <div class="epic-link-action">
+                    <span>شاهد التفاصيل كامله</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DRP10rHDAi2/?igsh=MWJ5bWxnNXRzcDRhNw==" target="_blank" class="epic-card">
+            <div class="epic-img-holder">
+                <img src="visa.png" alt="Emirates NBD Visa">
+            </div>
+            <div class="epic-info">
+                <h3>Emirates NBD Visa<br>لقاء الأسطورة غوارديولا</h3>
+                <div class="epic-link-action">
+                    <span>شاهد التفاصيل كامله</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                </div>
+            </div>
+        </a>
+        
+        <a href="https://www.tiktok.com/@hemex_7/video/7496310918222007559?_r=1&_t=ZS-95Q9TPfYxCX" target="_blank" class="epic-card">
+            <div class="epic-img-holder">
+                <img src="f1.png" alt="فورميلا F1">
+            </div>
+            <div class="epic-info">
+                <h3>تغطية للحدث العالمي فورميلا F1</h3>
+                <div class="epic-link-action">
+                    <span>شاهد التفاصيل كامله</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section class="logo-grid-wrapper" style="padding: 80px 5%; background: #F9F9FB; direction: rtl; font-family: 'Cairo', sans-serif;">
+    <div style="text-align: center; margin-bottom: 60px;">
+        <h1 style="font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; color: #111111; margin: 0;">
+            المشاركات <span style="color: #ffa211;">والتعاونات</span>
+        </h1>
+        <div style="width: 50px; height: 3px; background: #ffa211; margin: 15px auto;"></div>
+    </div>
+    <div class="logo-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; align-items: center; justify-items: center;">
+<img src="6.png" alt="Logo" class="static-brand" style="
+    transform: scale(1.50);
+    filter: brightness(0) contrast(1);
+">        <img src="311.PNG" alt="Logo" class="static-brand">
+        <img src="17.PNG" alt="Logo" class="static-brand"> 
+        <img src="19.WEBP" alt="Logo" class="static-brand"> 
+        <img src="DAMA.png" alt="Logo" class="static-brand" style="transform: scale(2); filter: brightness(0) contrast(1);">
+        <img src="211.png" alt="Logo" class="static-brand" style="transform: scale(2);">
+        <img src="222.png" alt="Logo" class="static-brand" style="transform: scale(1.5);">
+        <img src="25.png" alt="Logo" class="static-brand" style="filter: brightness(0) contrast(1);">
+        <img src="26.PNG" alt="Logo" class="static-brand">
+<img src="ASS.png" alt="Logo" class="static-brand" style="transform: scale(1.5); filter: brightness(0) contrast(1);">        <img src="2.PNG" alt="Logo" class="static-brand">
+        <img src="44.PNG" alt="Logo" class="static-brand">
+        <img src="5.PNG" alt="Logo" class="static-brand"> 
+        <img src="28.PNG" alt="Logo" class="static-brand">
+        <img src="29.PNG" alt="Logo" class="static-brand"> 
+        <img src="30.png" alt="Logo" class="static-brand" style="transform: scale(1.2);"> 
+        <img src="32.PNG" alt="Logo" class="static-brand" style="transform: scale(1.5);">
+        <img src="33.PNG" alt="Logo" class="static-brand"> 
+        <img src="EW.png" alt="Logo" class="static-brand" style="transform: scale(1.5); filter: brightness(0) contrast(1);" >
+        <img src="34.PNG" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="35.PNG" alt="Logo" class="static-brand"> 
+        <img src="36.png" alt="Logo" class="static-brand" style="transform: scale(1.9); filter: brightness(0) contrast(1);">
+        <img src="38.PNG" alt="Logo" class="static-brand" style="transform: scale(1.2); filter: brightness(0) contrast(1);"> 
+        <img src="40.WEBP" alt="Logo" class="static-brand">
+        <img src="KNNN.png" alt="Logo" class="static-brand"style="transform: scale(1.4);" >
+        <img src="OUUUT.png" alt="Logo" class="static-brand">
+        <img src="7.PNG" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="13.PNG" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="23.PNG" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="11.WEBP" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="SHA.png" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="Alnassr.png" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="KSA.png" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="RA2.png" alt="Logo" class="static-brand" style="transform: scale(1.4);">
+        <img src="PARK.png" alt="Logo" class="static-brand" style="transform: scale(1.5);filter: brightness(0) contrast(1);">
+        <img src="RI.png" alt="Logo" class="static-brand" style="transform: scale(1.4);">
+        <img src="RM.png" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="NU.png" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="L.png" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="3333.png" alt="Logo" class="static-brand" style="transform: scale(1.4);">
+        <img src="SBC.png" alt="Logo" class="static-brand" style="transform: scale(1.6);">
+        <img src="SND.png" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="FORMALA.png" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="NO.png" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="FOR.png" alt="Logo" class="static-brand" style="transform: scale(1.2);filter: brightness(0) contrast(1);">
+        <img src="DA.png" alt="Logo" class="static-brand" style="transform: scale(1.2);filter: brightness(0) contrast(1);">
+        <img src="MK.png" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="CO.png" alt="Logo" class="static-brand" style="transform: scale(1.2);">
+        <img src="VQ.png" alt="Logo" class="static-brand" style="transform: scale(1.2);filter: brightness(0) contrast(1);">
+    </div>
+</section>
+
+<style>
+    .stat-item {
+        transition: all 0.5s ease;
+        padding: 20px;
+    }
+    .stat-item:hover {
+        transform: translateY(-5px);
+    }
+    .stat-item:hover div {
+        text-shadow: 0 0 15px rgba(255,162,17,0.3);
+    }
+    .ft-social {
+        width: 40px;
+        height: 40px;
+        background: #111111;
+        color: #ffffff !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .ft-social:hover {
+        background: #ffa211;
+        transform: translateY(-3px);
+    }
+</style>
+
+<footer id="ss" style="background: #F9F9FB; padding: 60px 40px; border-top: 1px solid rgba(0,0,0,0.05); font-family: 'Cairo', sans-serif; position: relative; overflow: hidden; direction: rtl;">
+    
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; opacity: 0.03; pointer-events: none; user-select: none; font-family: 'Cairo'; font-weight: 900; font-size: 15vw; color: #111111; white-space: nowrap; letter-spacing: 20px;">
+        HEMEX 77
+    </div>
+    
+    <div class="footer-grid-container" style="max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 80px 1.4fr; align-items: center; position: relative; z-index: 5;">
+        
+        <div style="text-align: right;">
+            <a href="#" style="font-size: 2.5rem; text-decoration: none; color: #111111; font-weight: 900; letter-spacing: -1px;">HEMEX<span style="color: #ffa211; font-weight: 300;">_77</span></a>
+            <p style="color: #444444; line-height: 1.8; font-size: 1rem; max-width: 400px; margin: 20px 0 25px 0; font-family: 'Almarai';">
+                المنصة الرسمية لصانع المحتوى محمد الظرافي. حيث تلتقي الرياضة بالترفيه، وتجتمع الملايين في مكان واحد.
+            </p>
+            <div style="display: flex; gap: 12px; justify-content: flex-start;">
+                <a href="https://www.tiktok.com/@hemex_7" class="ft-social"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/hemex_77/" class="ft-social"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@hemex" class="ft-social"><i class="fab fa-youtube"></i></a>
+                <a href="https://x.com/hemex_777" class="ft-social"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.snapchat.com/@hemex_7" class="ft-social"><i class="fab fa-snapchat"></i></a>
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <div style="width: 1px; height: 120px; background: linear-gradient(to bottom, transparent, #ffa211, transparent);"></div>
+            <div style="width: 6px; height: 6px; background: #ffa211; border-radius: 50%;"></div>
+            <div style="width: 1px; height: 120px; background: linear-gradient(to top, transparent, #ffa211, transparent);"></div>
+        </div>
+
+        <div style="text-align: left; direction: ltr;">
+            <div style="background: #ffffff; padding: 30px; border-radius: 24px; border: 1px solid rgba(0,0,0,0.04); box-shadow: 0 10px 35px rgba(0,0,0,0.02); display: inline-block; width: 100%;">
+                <p style="color: #111111; font-size: 1rem; margin-bottom: 25px; font-weight: 800; font-family: 'Cairo'; text-align: center; direction: rtl;">تراخيص إعلامية معتمدة</p>
+                <div style="display: flex; gap: 30px; align-items: center; justify-content: center; flex-wrap: wrap;">
+                    
+                    <div style="text-align: center;">
+                        <a href="a1.jpeg" target="_blank" style="text-decoration: none; display: block; cursor: pointer;">
+                            <img src="a1.jpeg" alt="ترخيص إعلامي سعودي" style="height: 120px; border-radius: 12px; transition: 0.3s; box-shadow: 0 8px 25px rgba(0,0,0,0.08);" onmouseover="this.style.transform='scale(1.08)';" onmouseout="this.style.transform='scale(1)';">
+                            <span style="display: block; font-size: 0.85rem; color: #ffa211; margin-top: 12px; font-family: 'Almarai'; text-decoration: underline; font-weight: bold; direction: rtl;">المملكة العربية السعودية</span>
+                        </a>
+                    </div>
+
+                    <div style="width: 1px; height: 80px; background: rgba(0,0,0,0.08);"></div>
+
+                    <div style="text-align: center;">
+                        <a href="a2.png" target="_blank" style="text-decoration: none; display: block; cursor: pointer;">
+                            <img src="a2.png" alt="ترخيص دبي" style="height: 120px; border-radius: 12px; transition: 0.3s; box-shadow: 0 8px 25px rgba(0,0,0,0.08);" onmouseover="this.style.transform='scale(1.08)';" onmouseout="this.style.transform='scale(1)';">
+                            <span style="display: block; font-size: 0.85rem; color: #ffa211; margin-top: 12px; font-family: 'Almarai'; text-decoration: underline; font-weight: bold; direction: rtl;">دبي - الإمارات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<style>
+@media (max-width: 992px) {
+    .footer-grid-container {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        text-align: center !important;
+    }
+    .footer-grid-container > div {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+    .footer-grid-container > div:nth-child(2) {
+        display: none !important; 
+    }
+    .footer-grid-container style {
+        justify-content: center !important;
+    }
+    footer div div {
+        justify-content: center !important;
+    }
+}
+</style>
+
+<footer id="sara" style="background-color: #F9F9FB; padding: 30px 0 40px 0; border-top: 1px solid rgba(0,0,0,0.03);">
+<div style="margin-top: 0px; padding: 25px; text-align: center; direction: ltr; font-family: 'Cairo', sans-serif;">
+    <div style="width: 40px; height: 1px; background: #ffa211; margin: 0 auto 20px; opacity: 0.6;"></div>
+    
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+   
+        <h2 style="margin: 0; font-size: 1.6rem; font-weight: 900; color: #111111; letter-spacing: -0.5px;">
+            SARA <span style="color: #ffa211; font-weight: 300; letter-spacing: 2px;">MOHAMAD</span>
+        </h2>
+     
+        <p style="margin: 0; font-size: 0.7rem; color: #555555; text-transform: uppercase; letter-spacing: 3px; font-family: 'Almarai'; font-weight: bold;">
+            Developer & Designer
+        </p>
+        
+        <div style="margin-top: 15px; display: flex; align-items: center; gap: 15px; opacity: 0.9;">
+           
+            <a href="https://www.instagram.com/sara.designer44/" target="_blank" style="color: #111111; text-decoration: none; font-size: 1rem; transition: 0.3s;" onmouseover="this.style.color='#ffa211'" onmouseout="this.style.color='#111111'">
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+            <span style="width: 1px; height: 12px; background: rgba(0,0,0,0.15);"></span>
+            
+            <span style="font-size: 0.7rem; color: #444444; font-family: 'Cairo', sans-serif; letter-spacing: 0.5px; font-weight: 600;">
+                Proudly made in Gaza
+            </span>
+        </div>
+    </div>
+</div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+  duration: 1000,
+  once: true,
+  offset: 100
+});
+</script>
+</body>
+</html>
